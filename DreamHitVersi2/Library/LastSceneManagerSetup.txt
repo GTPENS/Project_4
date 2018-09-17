@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/RhythmTool/Examples/Visualizer Example.unity
+  isLoaded: 1
+  isActive: 1
