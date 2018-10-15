@@ -327,7 +327,9 @@
     <Compile Include="Assets\Scripts\Database\Data.cs" />
     <Compile Include="Assets\Scripts\Database\User.cs" />
     <Compile Include="Assets\Scripts\Database\UserData.cs" />
+    <Compile Include="Assets\Scripts\Game\DelayVideo.cs" />
     <Compile Include="Assets\Scripts\Game\MovePlayer.cs" />
+    <Compile Include="Assets\Scripts\Game\Point.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\RhythmTool\Change log.txt" />
