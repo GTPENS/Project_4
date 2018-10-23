@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/admin', 'AdminController@index');
 Route::delete('/admin/delete/{id}','AdminController@delete');
+Route::get('/admin/detail/{id}','AdminController@detail');

@@ -25,7 +25,7 @@
     <tbody>
       @foreach($data as $u)
       <tr>
-        <td>{{$u->username}}</td>
+        <td><a href="{{url('/admin/detail')}}/{{$u->id}}">{{$u->username}}</a></td>
         <td>
             @if($u->role  == 'Admin')
               *****

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Coin;
 
 class AdminController extends Controller
 {
@@ -16,5 +17,11 @@ class AdminController extends Controller
         $data = User::where('id',$id)->first();
         $data->delete();
         return redirect()->back();
+    }
+
+    public function detail($id) {
+        $data = User::where('id',$id)->first();
+        $coin = Coin::where('id_user',$id)->sum('coin');
+        echo 'username ' . $data->username . ' : ' . $coin;
     }
 }
